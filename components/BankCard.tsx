@@ -1,14 +1,9 @@
 import { formatAmount } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-// import Copy from "./Copy";
+import Copy from "./Copy";
 import React from "react";
 
-// const BankCard = () => {
-//   return <div>BankCard</div>;
-// };
-
-// export default BankCard;
 const BankCard = ({
   account,
   userName,
@@ -60,7 +55,7 @@ const BankCard = ({
         />
       </Link>
 
-      {/* {showBalance && <Copy title={account?.sharaebleId} />} */}
+      {showBalance && <Copy title={account?.shareableId} />}
     </div>
   );
 };
